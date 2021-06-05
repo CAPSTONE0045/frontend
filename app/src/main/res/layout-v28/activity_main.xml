@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeActivity">
+
+    <TextView
+        android:id="@+id/tv_our_mission"
+        android:layout_width="258dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="134dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:gravity="top"
+        android:lineHeight="20sp"
+        android:text="@string/our_mission"
+        android:textAppearance="@style/our_mission"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="77dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="top"
+        android:letterSpacing="0.02"
+        android:fontFamily="@font/montserrat_alternates"
+        android:lineHeight="17sp"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/sign_up"
+        android:textAppearance="@style/sign_up"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_sign"
+        app:layout_constraintEnd_toEndOf="@+id/button_sign"
+        app:layout_constraintStart_toStartOf="@+id/button_sign"
+        app:layout_constraintTop_toTopOf="@+id/button_sign" />
+
+    <View
+        android:id="@+id/button_sign"
+        android:layout_width="347.76dp"
+        android:layout_height="66.21dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_sign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_our_mission" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,182 @@
     android:layout_height="match_parent"
     tools:context=".ui.LoginActivity">
 
+    <ImageView
+        android:id="@+id/ion_return"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/ion_return"
+        android:contentDescription="@string/ion_return"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_skin"
+        android:layout_width="276dp"
+        android:layout_height="293dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="62dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/login_skin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="398dp"
+        android:layout_height="448dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/rectangle1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_skin" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="335dp"
+        android:layout_height="64.92dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/textbox"
+        android:fontFamily="@font/montserrat_alternates"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:letterSpacing="-0.33"
+        android:paddingStart="24.36dp"
+        android:paddingTop="24.79dp"
+        android:paddingEnd="236.33dp"
+        android:paddingBottom="22.43dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="335dp"
+        android:layout_height="64.92dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/textbox"
+        android:fontFamily="@font/montserrat_alternates"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:letterSpacing="-0.33"
+        android:paddingStart="24.36dp"
+        android:paddingTop="24.79dp"
+        android:paddingEnd="236.33dp"
+        android:paddingBottom="22.43dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <CheckBox
+        android:id="@+id/cb_remember"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:letterSpacing="-0.33"
+        android:text="@string/remember"
+        android:textColor="@color/black_title"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:letterSpacing="-0.33"
+        android:text="@string/forgot"
+        android:textColor="@color/black_title"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/tv_dont_have"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:letterSpacing="-0.33dp"
+        android:text="@string/dont_have"
+        android:textColor="@color/black_title"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@id/rectangle_1" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:letterSpacing="-0.33"
+        android:text="@string/sign_up"
+        android:textColor="@color/black_title"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_1"
+        app:layout_constraintStart_toEndOf="@id/tv_dont_have" />
+
+    <TextView
+        android:id="@+id/tv_btn_login"
+        android:layout_width="77dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:gravity="top"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/btn_login"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="@+id/button_login"
+        app:layout_constraintStart_toStartOf="@+id/button_login"
+        app:layout_constraintTop_toTopOf="@+id/button_login" />
+
+    <View
+        android:id="@+id/button_login"
+        android:layout_width="347.76dp"
+        android:layout_height="66.21dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_sign"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

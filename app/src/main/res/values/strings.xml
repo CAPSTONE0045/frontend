@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Skin AI</string>
     <string name="our_mission">Our mission is to assist you in detecting skin diseases</string>
-    <string name="sign_up">SIGN UP</string>
+    <string name="btn_sign_up">SIGN UP</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="sign_up">Sign Up</string>
     <string name="welcome_text">Welcome to SKIN.AI</string>
     <string name="let_s_creat">Let\'s Create You A New Account!</string>
     <string name="we_so_glad">We so glad to have you here.</string>
@@ -12,4 +14,7 @@
     <string name="agree_terms"><![CDATA[I agree with terms & conditions]]></string>
     <string name="already_have">Already have an account ?</string>
     <string name="login">Login</string>
+    <string name="remember">Remember me</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="dont_have">Don’t have an account ?</string>
 </resources>

@@ -13,4 +13,7 @@
     <string name="agree_terms"><![CDATA[I agree with terms & conditions]]></string>
     <string name="already_have">Already have an account ?</string>
     <string name="login">Login</string>
+    <string name="remember">Remember me</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="dont_have">Don’t have an account ?</string>
 </resources>

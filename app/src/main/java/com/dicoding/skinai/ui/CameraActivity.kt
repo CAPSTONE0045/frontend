@@ -3,9 +3,9 @@ package com.dicoding.skinai.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainMenuActivity : AppCompatActivity() {
+class CameraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_menu)
+        setContentView(R.layout.activity_camera)
     }
 }

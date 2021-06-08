@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CameraActivity">
+
+    <ImageView
+        android:id="@+id/ion_return"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/ion_return"
+        android:contentDescription="@string/ion_return"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_bar"
+        android:layout_width="337dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="38dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/camera_instruction"
+        android:src="@drawable/rectangle_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ion_return" />
+
+    <TextView
+        android:id="@+id/tv_camera_instruction"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:gravity="top"
+        android:letterSpacing="-0.33"
+        android:text="@string/camera_instruction"
+        android:textColor="@color/black_title"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bar"
+        app:layout_constraintStart_toStartOf="@+id/img_bar"
+        app:layout_constraintTop_toTopOf="@+id/img_bar" />
+
+    <ImageView
+        android:id="@+id/img_camera_box"
+        android:layout_width="349dp"
+        android:layout_height="472dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="33dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/camera_instruction"
+        android:src="@drawable/rectangle_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bar" />
+
+    <View
+        android:id="@+id/button_check"
+        android:layout_width="347.76dp"
+        android:layout_height="66.21dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/button_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_camera_box" />
+
+    <TextView
+        android:id="@+id/tv_button_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="86dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:gravity="top"
+        android:text="@string/btn_check"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_check"
+        app:layout_constraintStart_toStartOf="@+id/button_check"
+        app:layout_constraintTop_toTopOf="@+id/button_check" />
+</androidx.constraintlayout.widget.ConstraintLayout>

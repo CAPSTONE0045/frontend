@@ -27,4 +27,5 @@
     <string name="tap_instruction">Tap on the body map to detect your skin</string>
     <string name="camera_instruction">Point the camera at the skin you want to detect</string>
     <string name="btn_check">CHECK</string>
+    <string name="tv_result">This is your diagnose</string>
 </resources>

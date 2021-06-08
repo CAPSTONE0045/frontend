@@ -24,4 +24,5 @@
     <string name="menu_check">Skin Check Menu</string>
     <string name="menu_record">Medical Records Menu</string>
     <string name="menu_profile">Profile</string>
+    <string name="tap_instruction">Tap on the body map to detect your skin</string>
 </resources>

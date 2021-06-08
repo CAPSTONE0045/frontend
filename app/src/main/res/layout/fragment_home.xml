@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
-    tools:context=".ui.MainMenuActivity">
+    tools:context=".ui.home.HomeFragment">
 
     <TextView
         android:id="@+id/tv_welcome_main"
@@ -124,20 +124,5 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle_record"
         app:layout_constraintStart_toStartOf="@+id/rectangle_record"
         app:layout_constraintTop_toBottomOf="@+id/img_record_logo" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="335dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="57dp"
-        android:background="@drawable/bottom_nav_background"
-        app:itemIconTint="@color/bottom_nav"
-        app:itemTextColor="@color/bottom_nav"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_menu" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

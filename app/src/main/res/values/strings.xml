@@ -21,6 +21,11 @@
     <string name="record">Medical Records</string>
     <string name="welcome_main">Hi, %s!</string>
     <string name="welcome_sub_main">Let’s check your skin</string>
-    <string name="menu_main">Home</string>
     <string name="menu_profile">Profile</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_check">Skin Check</string>
+    <string name="title_record">Medical Records</string>
+    <string name="title_profile">Profile</string>
+    <string name="tap_instruction">Tap on the body map to detect your skin</string>
 </resources>

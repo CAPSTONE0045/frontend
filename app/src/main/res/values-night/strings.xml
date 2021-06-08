@@ -16,4 +16,12 @@
     <string name="remember">Remember me</string>
     <string name="forgot">Forgot password?</string>
     <string name="dont_have">Don’t have an account ?</string>
+    <string name="check">Skin Check</string>
+    <string name="record">Medical Records</string>
+    <string name="welcome_main">Hi, Sally !\nLetâs check your skin</string>
+    <string name="welcome_sub_main">Let’s check your skin</string>
+    <string name="menu_main">Main Menu</string>
+    <string name="menu_check">Skin Check Menu</string>
+    <string name="menu_record">Medical Records Menu</string>
+    <string name="menu_profile">Profile</string>
 </resources>

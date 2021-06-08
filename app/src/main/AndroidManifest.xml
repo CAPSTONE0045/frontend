@@ -2,16 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dicoding.skinai">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SkinAI">
-        <activity android:name=".ui.SplashScreenActivity"/>
-        <activity android:name=".ui.LoginActivity" />
-        <activity android:name=".ui.RegisActivity" />
+        android:theme="@style/Theme.SkinAI"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.MainMenuActivity"></activity>
+        <activity android:name=".ui.SplashScreenActivity" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.RegisActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".ui.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="@string/menu_main"
+        android:icon="@drawable/menu_home"/>
+
+    <item
+        android:id="@+id/item2"
+        android:title="@string/check"
+        android:icon="@drawable/menu_skin_check"/>
+
+    <item
+        android:id="@+id/item3"
+        android:title="@string/record"
+        android:icon="@drawable/menu_medical_records"/>
+
+    <item
+        android:id="@+id/item4"
+        android:title="@string/menu_profile"
+        android:icon="@drawable/menu_profile"/>
+</menu>

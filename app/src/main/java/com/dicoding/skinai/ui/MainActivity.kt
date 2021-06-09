@@ -1,12 +1,22 @@
 package com.dicoding.skinai.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import com.dicoding.skinai.R
+import androidx.appcompat.app.AppCompatActivity
+import com.dicoding.skinai.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.buttonSign.setOnClickListener {
+            val intent = Intent(this, RegisActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

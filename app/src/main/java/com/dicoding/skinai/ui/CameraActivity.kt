@@ -2,6 +2,7 @@ package com.dicoding.skinai.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dicoding.skinai.R
 
 class CameraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

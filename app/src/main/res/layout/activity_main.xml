@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/tv_welcome"
-        android:layout_width="248dp"
+        android:layout_width="0dp"
         android:layout_height="176dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="119dp"
@@ -28,7 +28,7 @@
 
     <ImageView
         android:id="@+id/img_doctor"
-        android:layout_width="327dp"
+        android:layout_width="0dp"
         android:layout_height="488dp"
         android:layout_marginStart="21dp"
         android:layout_marginEnd="66dp"
@@ -41,7 +41,7 @@
 
     <TextView
         android:id="@+id/tv_our_mission"
-        android:layout_width="258dp"
+        android:layout_width="0dp"
         android:layout_height="57dp"
         android:layout_marginStart="22dp"
         android:layout_marginEnd="134dp"
@@ -59,7 +59,7 @@
 
     <TextView
         android:id="@+id/tv_sign_up"
-        android:layout_width="77dp"
+        android:layout_width="0dp"
         android:layout_height="16dp"
         android:layout_marginStart="134dp"
         android:layout_marginTop="24dp"
@@ -81,7 +81,7 @@
 
     <View
         android:id="@+id/button_sign"
-        android:layout_width="347.76dp"
+        android:layout_width="0dp"
         android:layout_height="66.21dp"
         android:layout_marginStart="33dp"
         android:layout_marginTop="18dp"
@@ -92,6 +92,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_our_mission" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.skinai.ui.databinding.FragmentHomeBinding
+import com.dicoding.skinai.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = binding.tvCheck
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

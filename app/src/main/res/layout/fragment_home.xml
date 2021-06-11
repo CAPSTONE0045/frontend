@@ -2,62 +2,63 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
     android:background="@drawable/main_background"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
-        android:id="@+id/tv_welcome_main"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_welcome_home"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:fontFamily="@font/montserrat_bold"
         android:gravity="top"
-        android:letterSpacing="-0.02"
+        android:text="@string/welcome_home_text"
         android:textColor="@color/black_title"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_sub_welcome_main"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Hi, Sally!" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_sub_welcome_main"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_sub_welcome_home"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="87dp"
         android:fontFamily="@font/montserrat"
         android:gravity="top"
-        android:letterSpacing="-0.02"
         android:text="@string/welcome_sub_main"
         android:textColor="@color/black_title"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_check"
-        app:layout_constraintStart_toStartOf="@+id/tv_welcome_main" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome_home"
+        app:layout_constraintStart_toStartOf="@+id/tv_welcome_home" />
 
     <View
         android:id="@+id/rectangle_check"
-        android:layout_width="160dp"
+        android:layout_width="0dp"
         android:layout_height="160dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="127dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="87dp"
         android:layout_marginEnd="127dp"
         android:importantForAccessibility="no"
         android:background="@drawable/rectangle_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_welcome_home" />
 
     <ImageView
         android:id="@+id/img_check_logo"
-        android:layout_width="95dp"
+        android:layout_width="0dp"
         android:layout_height="95dp"
+        android:scaleType="fitCenter"
         android:layout_marginStart="32dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="32dp"
@@ -84,7 +85,7 @@
 
     <View
         android:id="@+id/rectangle_record"
-        android:layout_width="160dp"
+        android:layout_width="0dp"
         android:layout_height="160dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -99,11 +100,12 @@
 
     <ImageView
         android:id="@+id/img_record_logo"
-        android:layout_width="95dp"
+        android:layout_width="0dp"
         android:layout_height="95dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="32dp"
+        android:scaleType="fitCenter"
         android:contentDescription="@string/record"
         android:src="@drawable/record_logo"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_record"

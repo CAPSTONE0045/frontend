@@ -19,10 +19,9 @@
     <string name="dont_have">Don’t have an account ?</string>
     <string name="check">Skin Check</string>
     <string name="record">Medical Records</string>
-    <string name="welcome_main">Hi, %s!</string>
     <string name="welcome_sub_main">Let’s check your skin</string>
     <string name="menu_profile">Profile</string>
-    <string name="title_activity_home">MainActivity</string>
+    <string name="title_activity_home">Home Page</string>
     <string name="title_home">Home</string>
     <string name="title_check">Skin Check</string>
     <string name="title_record">Medical Records</string>
@@ -31,5 +30,10 @@
     <string name="camera_instruction">Point the camera at the skin you want to detect</string>
     <string name="btn_check">CHECK</string>
     <string name="tv_result">This is your diagnose</string>
+    <string name="welcome_home_text">Hi, Sally!</string>
+    <string name="box_camera_instruction">Tap to Upload an Image</string>
+    <string name="uploaded_image">Uploaded Image</string>
+    <string name="result">Result</string>
+    <string name="content_result">The result of your diagnose is Psioriasis.\nPsoriasis is a chronic and autoimmune inflammatory disease (disease that appears as a result of a reaction of the immune system or the body\'s immune system) that occurs on the skin characterized by thick white, silver, or red scaly patches in various parts of the body triggered by environmental factors, immune attack body (autoimmune) due to an abnormal number of lymphocytes, and an overactive immune system.\nHere are some precautions that can be taken.</string>
 
 </resources>

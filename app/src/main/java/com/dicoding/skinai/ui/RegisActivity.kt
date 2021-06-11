@@ -2,9 +2,12 @@ package com.dicoding.skinai.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentTransaction
 import com.dicoding.skinai.R
 import com.dicoding.skinai.databinding.ActivityRegisBinding
+import com.dicoding.skinai.ui.home.HomeFragment
 
 class RegisActivity : AppCompatActivity() {
 
@@ -31,4 +34,5 @@ class RegisActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

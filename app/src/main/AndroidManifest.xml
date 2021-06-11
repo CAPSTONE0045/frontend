@@ -10,12 +10,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SkinAI">
-        <activity android:name=".ui.ResultActivity" />
-        <activity android:name=".ui.CameraActivity" />
+        <activity
+            android:name=".ui.ResultActivity"
+            android:parentActivityName=".ui.HomeActivity"
+            android:theme="@style/Theme.SkinAI.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.CameraActivity"
+            android:parentActivityName=".ui.HomeActivity"
+            android:theme="@style/Theme.SkinAI.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.HomeActivity" />
+        </activity>
         <activity
             android:name=".ui.HomeActivity"
             android:label="@string/title_activity_home" />
-        <activity android:name=".ui.SplashScreenActivity">
+        <activity
+            android:name=".ui.SplashScreenActivity"
+            android:theme="@style/Theme.SkinAI.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,7 +58,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity" />
         </activity>
-        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/Theme.SkinAI.NoActionBar" />
     </application>
 
 </manifest>

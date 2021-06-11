@@ -1,18 +1,17 @@
 package com.dicoding.skinai.ui.check
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import com.dicoding.skinai.databinding.FragmentCheckBinding
+import com.dicoding.skinai.ui.CameraActivity
+
 
 class CheckFragment : Fragment() {
 
-    private lateinit var checkViewModel: CheckViewModel
     private var _binding: FragmentCheckBinding? = null
 
     // This property is only valid between onCreateView and
@@ -23,17 +22,17 @@ class CheckFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        checkViewModel =
-            ViewModelProvider(this).get(CheckViewModel::class.java)
+    ): View {
 
         _binding = FragmentCheckBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.tvTapInstruction
-        checkViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+        binding.apply {
+            imgCheckLocation.setOnClickListener {
+                val intent = Intent(activity, CameraActivity::class.java)
+                startActivity(intent)
+            }
+        }
         return root
     }
 
